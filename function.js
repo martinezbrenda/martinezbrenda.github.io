@@ -3,20 +3,21 @@ document.getElementById('modoOscuro').onclick = function(){
     var texto = document.getElementsByClassName("contenido");
     var recuadro = document.getElementsByClassName("box");
     var datos = document.getElementsByClassName("importante");
-    document.body.style.backgroundColor='rgb(39, 37, 37)';
-
+    document.body.style.backgroundImage= "url('fondo_negro3.jpg')";
+    
   for (var i = 0; i < texto.length; i++) {
     texto[i].style.color = "white";
   }
-  for (var j = 0; j < recuadro.length; j++) {
-    recuadro[j].style.borderColor ='rgb(228, 200, 255)';
-  }
-  for (var k = 0; k < recuadro.length; k++) {
-    datos[k].style.color ='white';
-    datos[k].style.textDecorationColor='white';
-    datos[k].style.textDecorationStyle='solid';
-  }
 
+for (var j = 0; j < recuadro.length; j++) {
+ recuadro[j].style.backgroundImage = "url('fondo_box_negro.jpg')";
+ }
+
+  for (var k = 0; k < datos.length; k++) {
+    datos[k].style.color ="white";
+    datos[k].style.textDecorationColor="white";//color del subrayado
+    datos[k].style.textDecorationStyle="solid";//tipo de subrayado
+  }
 }
 
 function mostrarOcultar(x){
